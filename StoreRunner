@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class StoreRunner {
+  public static void main(String[] args) {
+
+    System.out.println("Welcome to the store!");
+
+    
+    Scanner flavor = new Scanner(System.in);  //finds flavor
+    System.out.println("Enter flavor");  
+    String newFlavor = flavor.nextLine();  
+    
+    Scanner price = new Scanner(System.in); //finds price
+    System.out.println("Enter price");
+    double newPrice = price.nextDouble();
+
+    Scanner toppings = new Scanner(System.in); // finds toppings
+    System.out.println("What toppings would you like?");
+    String newToppings = toppings.nextLine();
+
+    Scanner size = new Scanner(System.in); //finds size
+    System.out.println("What size would you like? (in inches and diameter)");
+    int newSize = size.nextInt();
+
+    Scanner creamy = new Scanner(System.in); // finds creamy
+    System.out.println("Is it creamy? (Say 'true' or 'false')");
+    boolean newCreamy = creamy.nextBoolean();
+
+    System.out.println("\n");
+    Cheesecake yourCheesecake = new Cheesecake(newFlavor, newPrice, newToppings, newSize, newCreamy);
+    System.out.println(yourCheesecake);
+    
+
+
+
+    // Closes the Scanner object
+  }
+}
