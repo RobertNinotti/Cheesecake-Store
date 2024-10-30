@@ -1,0 +1,24 @@
+public class Cheesecake extends Cake {
+
+  private boolean creamy;  // Is the cheesecake creamy or not
+
+
+  
+  public Cheesecake() { // No argument constructor
+    super("plain", 2.00, "vanilla", 1);
+    this.creamy = creamy;
+  }
+
+  public Cheesecake(String flavor, double price, String toppings, int size, boolean creamy) { // parameterized constructor
+    super(flavor, price, toppings, size);
+    this.creamy = creamy;
+  }
+
+  
+  public String toString() {
+    return super.toString() + "\n" + "Is it creamy? " + "" + creamy + "";
+  }
+  
+
+  
+}
