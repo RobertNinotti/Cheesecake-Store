@@ -1,0 +1,33 @@
+public class Cake extends Dessert {
+
+  private String toppings;
+  protected int size;
+
+  public Cake() {
+    super("plain", 2.00);
+    this.toppings = toppings;
+    this.size = size;
+  }
+
+
+
+  public Cake(String flavor, double price, String toppings, int size) {
+    super(flavor, price);
+    this.toppings = toppings;
+    this.size = size;
+    
+  }
+
+
+  public String toString() {
+    return super.toString() + "\n" + "Toppings: " + toppings + "\n" + "Size: " + "" + size + "";
+  }
+
+
+
+
+  
+}
+
+
+
